@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {PersonModel} from "../person.model";
 
 @Component({
   selector: 'app-person',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./person.component.css']
 })
 export class PersonComponent {
-
+  @Input() person: PersonModel;
+  @Input() index: number;
 }

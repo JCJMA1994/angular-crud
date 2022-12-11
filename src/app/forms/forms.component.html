@@ -1,1 +1,11 @@
-<p>forms works!</p>
+<form class="form-row">
+  <div class="form-group col-md-2">
+    <input type="text" name="name" placeholder="Name" id="name" class="form-control" [(ngModel)]="nameInput" >
+  </div>
+  <div class="form-group col-md-2">
+    <input type="text" name="lastname" placeholder="Lastname" id="lastname" class="form-control" [(ngModel)]="lastnameInput">
+  </div>
+  <div class="col">
+    <button type="submit" class="btn btn-primary" (click)="addPerson()">Add</button>
+  </div>
+</form>
